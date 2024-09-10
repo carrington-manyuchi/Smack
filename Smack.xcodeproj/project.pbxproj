@@ -19,6 +19,7 @@
 		E667A3192C8F6A1E0036CB78 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667A3182C8F6A1E0036CB78 /* GradientView.swift */; };
 		E667A31C2C901BB40036CB78 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667A31B2C901BB40036CB78 /* Constants.swift */; };
 		E667A31E2C9029650036CB78 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E667A31D2C9029650036CB78 /* LoginViewController.swift */; };
+		E6D947442C905AB700E9F5E0 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D947432C905AB700E9F5E0 /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		E667A3182C8F6A1E0036CB78 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		E667A31B2C901BB40036CB78 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E667A31D2C9029650036CB78 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E6D947432C905AB700E9F5E0 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				E667A3122C8F57170036CB78 /* ChannelViewController.swift */,
 				E667A3102C8F570D0036CB78 /* ChatViewController.swift */,
 				E667A31D2C9029650036CB78 /* LoginViewController.swift */,
+				E6D947432C905AB700E9F5E0 /* CreateAccountViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				E667A31E2C9029650036CB78 /* LoginViewController.swift in Sources */,
 				E667A3172C8F65230036CB78 /* SWRevealViewController.m in Sources */,
 				E667A31C2C901BB40036CB78 /* Constants.swift in Sources */,
+				E6D947442C905AB700E9F5E0 /* CreateAccountViewController.swift in Sources */,
 				E667A3112C8F570D0036CB78 /* ChatViewController.swift in Sources */,
 				E667A3132C8F57170036CB78 /* ChannelViewController.swift in Sources */,
 			);
