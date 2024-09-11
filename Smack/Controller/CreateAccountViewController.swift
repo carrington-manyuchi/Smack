@@ -17,10 +17,12 @@ class CreateAccountViewController: UIViewController {
     // Variables
     var avatarName = "profileDefault"
     var avatarColor = "[0.5, 0.5, 0.5, 1]"
+    var bgColor: UIColor?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -28,7 +30,24 @@ class CreateAccountViewController: UIViewController {
         if UserDataService.instance.avatarName != "" {
             userImageView.image = UIImage(named: UserDataService.instance.avatarName)
             avatarName = UserDataService.instance.avatarName
+            if avatarName.contains("light") &&  bgColor == nil {
+                userImageView.backgroundColor = .lightGray
+            }
         }
+    }
+    
+    
+    private func setupView() {
+        usernameText.attributedPlaceholder = NSAttributedString(string: "username", attributes: [NSAttributedString.Key.foregroundColor: smackPurplePlaceholder])
+        emailText.attributedPlaceholder = NSAttributedString(string: "email", attributes: [NSAttributedString.Key.foregroundColor: smackPurplePlaceholder])
+        passwordText.attributedPlaceholder = NSAttributedString(string: "password", attributes: [NSAttributedString.Key.foregroundColor: smackPurplePlaceholder])
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func handleTap() {
+        view.endEditing(true)
     }
 
     @IBAction func closePressed(_ sender: UIButton) {
@@ -40,6 +59,14 @@ class CreateAccountViewController: UIViewController {
     }
     
     @IBAction func pickBackgroundColorPressed(_ sender: Any) {
+        let r = CGFloat(arc4random_uniform(255)) / 255
+        let g = CGFloat(arc4random_uniform(255)) / 255
+        let b = CGFloat(arc4random_uniform(255)) / 255
+        
+        bgColor = UIColor(red: r, green: g, blue: b, alpha: 1)
+        UIView.animate(withDuration: 0.3) {
+            self.userImageView.backgroundColor = self.bgColor
+        }
     }
     
     @IBAction func createAccountPressed(_ sender: UIButton) {

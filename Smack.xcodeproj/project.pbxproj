@@ -25,6 +25,7 @@
 		E6D9474B2C917F7A00E9F5E0 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D9474A2C917F7A00E9F5E0 /* UserDataService.swift */; };
 		E6D9474D2C919F4B00E9F5E0 /* AvatarPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D9474C2C919F4B00E9F5E0 /* AvatarPickerViewController.swift */; };
 		E6D9474F2C91A19400E9F5E0 /* AvatarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D9474E2C91A19400E9F5E0 /* AvatarCollectionViewCell.swift */; };
+		E6D947512C91C7DC00E9F5E0 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D947502C91C7DC00E9F5E0 /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		E6D9474A2C917F7A00E9F5E0 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		E6D9474C2C919F4B00E9F5E0 /* AvatarPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerViewController.swift; sourceTree = "<group>"; };
 		E6D9474E2C91A19400E9F5E0 /* AvatarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCollectionViewCell.swift; sourceTree = "<group>"; };
+		E6D947502C91C7DC00E9F5E0 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				E667A3182C8F6A1E0036CB78 /* GradientView.swift */,
 				E6D947482C916B1D00E9F5E0 /* RoundedButton.swift */,
 				E6D9474E2C91A19400E9F5E0 /* AvatarCollectionViewCell.swift */,
+				E6D947502C91C7DC00E9F5E0 /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				E667A3112C8F570D0036CB78 /* ChatViewController.swift in Sources */,
 				E6D9474D2C919F4B00E9F5E0 /* AvatarPickerViewController.swift in Sources */,
 				E667A3132C8F57170036CB78 /* ChannelViewController.swift in Sources */,
+				E6D947512C91C7DC00E9F5E0 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
