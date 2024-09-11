@@ -110,5 +110,53 @@ class AuthService {
 
     }
     
+    func createUser(name: String, email: String, avatarName: String, avatarColor: String, completion: @escaping CompletionHandler) {
+        
+        let lowercasedEmail = email.lowercased()
+        
+        let body: [String: Any] = [
+            "name": name,
+            "email": lowercasedEmail,
+            "avatarName": avatarName,
+            "avatarColor": avatarColor
+        ]
+        
+        let header = [
+            "Authorisation": "Bearer \(AuthService.instance.authToken)",
+            "Content-Type": "application/json; charset=utf-8"
+        ]
+        
+        AF.request(URL_USER_ADD, method: .post, parameters: body, encoding: JSONEncoding.default, headers: HTTPHeaders(HEADER)).responseJSON { response in
+            switch response.result {
+            case .success:
+                // Check if status code is 200 OK (or whatever success code you expect)
+                if let statusCode = response.response?.statusCode, statusCode == 200 {
+                    do {
+                        guard let data = response.data else { return }
+                        let json = try JSON(data: data)
+                        let id = json["_id"].stringValue
+                        let color = json["avatarColor"].stringValue
+                        let email = json["email"].stringValue
+                        let avatarName = json["avatarName"].stringValue
+                        let name = json["name"].stringValue
+                        
+                        UserDataService.instance.setUserData(id: id, color: color, avatarName: avatarName, email: email, name: name)
+
+                        completion(true)
+                    } catch {
+                        print("Error parsing JSON: \(error.localizedDescription)")
+                        completion(false)
+                    }
+                } else {
+                    completion(false)
+                }
+                
+            case .failure(let error):
+                // Pass the error to the completion handler or log it
+                print("Error logging in user: \(error.localizedDescription)")
+                completion(false)
+            }
+        }
+    }
     
 }

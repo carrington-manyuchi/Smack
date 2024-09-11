@@ -22,6 +22,7 @@
 		E6D947442C905AB700E9F5E0 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D947432C905AB700E9F5E0 /* CreateAccountViewController.swift */; };
 		E6D947472C90790400E9F5E0 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D947462C90790400E9F5E0 /* AuthService.swift */; };
 		E6D947492C916B1D00E9F5E0 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D947482C916B1D00E9F5E0 /* RoundedButton.swift */; };
+		E6D9474B2C917F7A00E9F5E0 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D9474A2C917F7A00E9F5E0 /* UserDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		E6D947432C905AB700E9F5E0 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		E6D947462C90790400E9F5E0 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		E6D947482C916B1D00E9F5E0 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		E6D9474A2C917F7A00E9F5E0 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				E6D947462C90790400E9F5E0 /* AuthService.swift */,
+				E6D9474A2C917F7A00E9F5E0 /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				E667A31E2C9029650036CB78 /* LoginViewController.swift in Sources */,
 				E667A3172C8F65230036CB78 /* SWRevealViewController.m in Sources */,
 				E667A31C2C901BB40036CB78 /* Constants.swift in Sources */,
+				E6D9474B2C917F7A00E9F5E0 /* UserDataService.swift in Sources */,
 				E6D947492C916B1D00E9F5E0 /* RoundedButton.swift in Sources */,
 				E6D947442C905AB700E9F5E0 /* CreateAccountViewController.swift in Sources */,
 				E6D947472C90790400E9F5E0 /* AuthService.swift in Sources */,
