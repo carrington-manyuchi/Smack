@@ -28,6 +28,7 @@ class CreateAccountViewController: UIViewController {
     }
     
     @IBAction func pickAvatarPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: TO_AVATAR_PICKER, sender: nil)
     }
     
     @IBAction func pickBackgroundColorPressed(_ sender: Any) {
@@ -61,6 +62,14 @@ class CreateAccountViewController: UIViewController {
             }
         }
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == TO_AVATAR_PICKER {
+            if let destinationVC =  segue.destination as?  AvatarPickerViewController {
+                destinationVC.modalPresentationStyle = .fullScreen
+            }
+        }
     }
     
 }
