@@ -36,7 +36,6 @@ class CreateAccountViewController: UIViewController {
         }
     }
     
-    
     private func setupView() {
         usernameText.attributedPlaceholder = NSAttributedString(string: "username", attributes: [NSAttributedString.Key.foregroundColor: smackPurplePlaceholder])
         emailText.attributedPlaceholder = NSAttributedString(string: "email", attributes: [NSAttributedString.Key.foregroundColor: smackPurplePlaceholder])
@@ -64,6 +63,8 @@ class CreateAccountViewController: UIViewController {
         let b = CGFloat(arc4random_uniform(255)) / 255
         
         bgColor = UIColor(red: r, green: g, blue: b, alpha: 1)
+        
+        avatarColor = "[\(r), \(g), \(b), 1]"
         UIView.animate(withDuration: 0.3) {
             self.userImageView.backgroundColor = self.bgColor
         }
@@ -87,9 +88,8 @@ class CreateAccountViewController: UIViewController {
                     if success {
                         AuthService.instance.createUser(name: name, email: email, avatarName: self.avatarName, avatarColor: self.avatarColor) { success in
                             if success {
-                                print(UserDataService.instance.name)
-                                print(UserDataService.instance.avatarName)
                                 self.performSegue(withIdentifier: UNWIND, sender: nil)
+                                NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
                             }
                         }
                     }

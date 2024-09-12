@@ -196,6 +196,7 @@
                     </view>
                     <connections>
                         <outlet property="loginButton" destination="lAR-3V-Uxm" id="c0C-7W-t1W"/>
+                        <outlet property="userImage" destination="Spp-V2-7Yb" id="SYK-GH-PgY"/>
                         <segue destination="hO1-SM-TAl" kind="show" identifier="toLogin" id="r8y-LD-Pt5"/>
                     </connections>
                 </viewController>
@@ -607,6 +608,12 @@
         </designable>
         <designable name="Cmo-Ok-1ql">
             <size key="intrinsicContentSize" width="46" height="33"/>
+        </designable>
+        <designable name="Ois-gt-tep">
+            <size key="intrinsicContentSize" width="192" height="192"/>
+        </designable>
+        <designable name="Spp-V2-7Yb">
+            <size key="intrinsicContentSize" width="99" height="99"/>
         </designable>
     </designables>
     <resources>
