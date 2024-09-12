@@ -26,6 +26,8 @@
 		E6D9474D2C919F4B00E9F5E0 /* AvatarPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D9474C2C919F4B00E9F5E0 /* AvatarPickerViewController.swift */; };
 		E6D9474F2C91A19400E9F5E0 /* AvatarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D9474E2C91A19400E9F5E0 /* AvatarCollectionViewCell.swift */; };
 		E6D947512C91C7DC00E9F5E0 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D947502C91C7DC00E9F5E0 /* CircleImage.swift */; };
+		E6D9499C2C92F5D400E9F5E0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D9499A2C92F5D400E9F5E0 /* ProfileViewController.swift */; };
+		E6D9499D2C92F5D400E9F5E0 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6D9499B2C92F5D400E9F5E0 /* ProfileViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		E6D9474C2C919F4B00E9F5E0 /* AvatarPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerViewController.swift; sourceTree = "<group>"; };
 		E6D9474E2C91A19400E9F5E0 /* AvatarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCollectionViewCell.swift; sourceTree = "<group>"; };
 		E6D947502C91C7DC00E9F5E0 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		E6D9499A2C92F5D400E9F5E0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E6D9499B2C92F5D400E9F5E0 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 		E61281FD2C8F402700D8E09E /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				E6D9499E2C92F5F800E9F5E0 /* Xibs */,
 				E6D947452C9078F400E9F5E0 /* Services */,
 				E667A31A2C901BA00036CB78 /* Utilities */,
 				E667A30F2C8F56F70036CB78 /* Model */,
@@ -140,6 +145,7 @@
 				E667A31D2C9029650036CB78 /* LoginViewController.swift */,
 				E6D947432C905AB700E9F5E0 /* CreateAccountViewController.swift */,
 				E6D9474C2C919F4B00E9F5E0 /* AvatarPickerViewController.swift */,
+				E6D9499A2C92F5D400E9F5E0 /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,6 +183,14 @@
 				E6D9474A2C917F7A00E9F5E0 /* UserDataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		E6D9499E2C92F5F800E9F5E0 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				E6D9499B2C92F5D400E9F5E0 /* ProfileViewController.xib */,
+			);
+			path = Xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +256,7 @@
 			files = (
 				E61282082C8F402900D8E09E /* Assets.xcassets in Resources */,
 				E612820B2C8F402900D8E09E /* Base in Resources */,
+				E6D9499D2C92F5D400E9F5E0 /* ProfileViewController.xib in Resources */,
 				E61282062C8F402700D8E09E /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +316,7 @@
 				E667A31E2C9029650036CB78 /* LoginViewController.swift in Sources */,
 				E667A3172C8F65230036CB78 /* SWRevealViewController.m in Sources */,
 				E6D9474F2C91A19400E9F5E0 /* AvatarCollectionViewCell.swift in Sources */,
+				E6D9499C2C92F5D400E9F5E0 /* ProfileViewController.swift in Sources */,
 				E667A31C2C901BB40036CB78 /* Constants.swift in Sources */,
 				E6D9474B2C917F7A00E9F5E0 /* UserDataService.swift in Sources */,
 				E6D947492C916B1D00E9F5E0 /* RoundedButton.swift in Sources */,

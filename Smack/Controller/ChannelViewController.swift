@@ -33,7 +33,15 @@ class ChannelViewController: UIViewController {
     }
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: TO_LOGIN, sender: nil)
+        
+        if AuthService.instance.isLoggedIn {
+            // show profile
+            let profile = ProfileViewController()
+            profile.modalPresentationStyle = .custom
+            present(profile, animated: true)
+        } else {
+            performSegue(withIdentifier: TO_LOGIN, sender: nil)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
